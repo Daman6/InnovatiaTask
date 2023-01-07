@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.fragments.quiz.QuizFragment">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/backArrowIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_round_arrow_back_24" />
+
+                <TextView
+                    android:id="@+id/TimeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:text="00:00:00"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/submitTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="7dp"
+                    android:text="Submit"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/backArrowIv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/backArrowIv" />
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/TimeTv">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/totalRecy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/quiz_no_item_layout"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+
+
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/quizviewpager2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_above="@+id/linear2"
+                    android:layout_below="@+id/linear">
+
+                </androidx.viewpager2.widget.ViewPager2>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"
+                    android:layout_alignTop="@+id/linear2" />
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/previousBtn"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="?android:selectableItemBackground"
+                        android:text="Previous"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="5dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/nextBtn"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="?android:selectableItemBackground"
+                        android:text="Next"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
