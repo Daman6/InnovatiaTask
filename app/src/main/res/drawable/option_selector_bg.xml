@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:drawable="@drawable/option_selected_background" android:state_selected="true" />
-    <item
-        android:drawable="@drawable/option_background" />
+<!--    <item android:drawable="@drawable/right_option_background" android:state_selected="true" android:state_activated="true"/>-->
+<!--    <item android:drawable="@drawable/wrong_option_background" android:state_selected="true" android:state_activated="false"/>-->
+    <item android:drawable="@drawable/option_selected_background" android:state_selected="true"/>
+    <item android:drawable="@drawable/option_background"/>
+
 </selector>

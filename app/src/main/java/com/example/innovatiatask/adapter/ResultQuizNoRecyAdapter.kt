@@ -10,8 +10,8 @@ import com.example.innovatiatask.R
 import com.example.innovatiatask.databinding.QuizNoItemLayoutBinding
 import com.example.innovatiatask.model.QuestionModel
 
-class QuizNoRecyAdapter(val mlist: List<QuestionModel>, val buttonClick: ButtonClick) :
-    RecyclerView.Adapter<QuizNoRecyAdapter.QuizNoViewHolder>() {
+class ResultQuizNoRecyAdapter(val mlist: List<QuestionModel>, val buttonClick: ButtonClick) :
+    RecyclerView.Adapter<ResultQuizNoRecyAdapter.QuizNoViewHolder>() {
 
     class QuizNoViewHolder(var binding: QuizNoItemLayoutBinding) :
         RecyclerView.ViewHolder(binding.root)
@@ -28,7 +28,11 @@ class QuizNoRecyAdapter(val mlist: List<QuestionModel>, val buttonClick: ButtonC
 
     override fun onBindViewHolder(holder: QuizNoViewHolder, position: Int) {
         val current = mlist[position]
-
+        if (current.correctAns.equals(current.selectedOption)){
+            holder.binding.layout.setBackgroundColor(Color.GREEN)
+        }else{
+            holder.binding.layout.setBackgroundColor(Color.RED)
+        }
         holder.binding.quizNot.text = current.currentquestionNo.toString()
 
         holder.itemView.setOnClickListener {

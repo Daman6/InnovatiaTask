@@ -33,15 +33,15 @@
                     style="@style/TextAppearance.Material3.LabelLarge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Total Ques :" />
+                    android:text="Total Marks :" />
 
                 <TextView
-                    android:id="@+id/totalQuesT"
+                    android:id="@+id/totalMarksT"
                     style="@style/TextAppearance.Material3.LabelLarge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="2dp"
-                    android:text="@{questionmodel.totalquestionNo}" />
+                    android:text="" />
 
                 <View
                     android:layout_width="1dp"
@@ -53,15 +53,15 @@
                     style="@style/TextAppearance.Material3.LabelLarge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Current Ques :" />
+                    android:text="Total Right :" />
 
                 <TextView
-                    android:id="@+id/currentQuesT"
+                    android:id="@+id/rightT"
                     style="@style/TextAppearance.Material3.LabelLarge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="2dp"
-                    android:text="@{questionmodel.currentquestionNo}" />
+                    android:text="" />
 
 
             </LinearLayout>
@@ -98,13 +98,15 @@
             </LinearLayout>
 
 
+
+
             <RelativeLayout
                 android:id="@+id/linear1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:padding="5dp"
-                android:background="@drawable/option_selector_bg"
+                android:background="@drawable/result_option_selector_bg"
                 android:orientation="horizontal">
 
                 <TextView
@@ -136,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:padding="5dp"
-                android:background="@drawable/option_selector_bg"
+                android:background="@drawable/result_option_selector_bg"
                 android:orientation="horizontal">
 
                 <TextView
@@ -167,7 +169,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:padding="5dp"
-                android:background="@drawable/option_selector_bg"
+                android:background="@drawable/result_option_selector_bg"
                 android:orientation="horizontal">
 
                 <TextView
@@ -197,7 +199,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:padding="5dp"
-                android:background="@drawable/option_selector_bg"
+                android:background="@drawable/result_option_selector_bg"
                 android:orientation="horizontal">
 
                 <TextView
@@ -221,6 +223,7 @@
                     android:src="@drawable/ic_launcher_background" />
 
             </RelativeLayout>
+
 
         </LinearLayout>
 

@@ -1,0 +1,15 @@
+package com.example.innovatiatask.utils
+
+import com.example.innovatiatask.model.QuestionModel
+
+class util {
+    fun questionList():MutableList<QuestionModel>{
+        val list = mutableListOf<QuestionModel>()
+        list.add(QuestionModel("Captial Of India?","5","1","3","","Mumbai","Jaipur","Delhi","Kolkata","https://uploads-ssl.webflow.com/576fd5a8f192527e50a4b95c/5c094bf23ae9451c4cda2427_best%20places%20to%20visit%20in%20Mumbai%20in%20one%20day.jpg","https://www.micato.com/wp-content/uploads/2018/09/jaipur-1110x700.jpg","https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVsaGl8ZW58MHx8MHx8&w=1000&q=80","https://images.unsplash.com/photo-1571679654681-ba01b9e1e117?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8a29sa2F0YXxlbnwwfHwwfHw%3D&w=1000&q=80"))
+        list.add(QuestionModel("Who Won Fifa 2022?","5","2","1","","Argentina","India","Spain","England","https://img.freepik.com/free-vector/illustration-argentina-flag_53876-27120.jpg?w=2000","https://media.istockphoto.com/id/512185437/photo/indias-flag-close-up.jpg?b=1&s=170667a&w=0&k=20&c=pCHooZVr_BbLSNLYk0B0i3QvHzJUQ81BpLlK2SVauFQ=","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBu600kFTTckY6o30sy_8V3y4eTNu-KCfvYw&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT55Y0G7mb8NElKVLHMVjkj-WN-DThnIEAEwA&usqp=CAU"))
+        list.add(QuestionModel("Name Sharukh khan first movie ?","5","3","2","","Deewana","Dilwale","Darr","Dil se","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2tYZxHuBB-c8dX4Q8UrPkYkeu6p7i8j3qEg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Wic-CDxb9y4Sncf1xrsO_Sui10ifO_y2eA&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjUfiGV7fGrul_-4Xg6n_nMMjRcbC-PnXrBQ&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlhVzvuo6QmxKhrUdWQWFWyDYQ1wYyKC3_XQ&usqp=CAU"))
+        list.add(QuestionModel("Which is an Indian currency ?","5","4","1","","INR","POUND","DOLLAR","DHIRAM","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCs8V1IRjad-_xij66cFTf-xjNxIZMHf-Mw&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt4IQCaJzeKrL1Pqi1wBH_Hl9J1UbsImb2yQ&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd-Zk4hMtLMgYjWgDxHbpSclNE1BUSSFDhMw&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScE4H1to4zMM2XG1DAop32Dx569XgwnXhepg&usqp=CAU"))
+        list.add(QuestionModel("Which festival is known as festival of colours ?","5","5","3","","Diwali","Onam","Holi","Christmas","https://www.aljazeera.com/wp-content/uploads/2022/10/000_32M27FG.jpg?resize=1800%2C1800","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGimkb064dxR8u6GXgsx1hBTk7nbEzC-DH_g&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTFxC-WegD-X31fYlHIJCGcgRSehLkmwB_rQ&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjghduQhmiV3nh_lxiXIgxKdduGoUAf6HWFQ&usqp=CAU"))
+        return list
+    }
+}
